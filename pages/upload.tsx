@@ -136,7 +136,6 @@ const Upload = () => {
                   <div className=" rounded-3xl w-[300px]  p-4 flex flex-col gap-6 justify-center items-center">
                     <video
                       className="rounded-xl h-[462px] mt-16 bg-black"
-                      controls
                       loop
                       src={videoAsset?.url}
                     />
@@ -179,7 +178,7 @@ const Upload = () => {
           >
             {topics.map((item) => (
               <option
-                key={item.name}
+                // key={item.name}
                 className=" outline-none capitalize bg-white text-gray-700 text-md p-2 hover:bg-slate-300"
                 value={item.name}
               >
